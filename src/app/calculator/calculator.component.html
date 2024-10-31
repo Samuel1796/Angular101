@@ -1,0 +1,16 @@
+<div class="calculator-container">
+    <h2>Calculator</h2>
+  
+    <!-- Browser Calculator -->
+    <div class="calculator-section">
+      <h3>Add Two Numbers</h3>
+      <div class="input-group">
+        <input type="number" [(ngModel)]="num1" placeholder="Enter first number">
+        <input type="number" [(ngModel)]="num2" placeholder="Enter second number">
+        <button (click)="addNumbers()">Add Numbers</button>
+      </div>
+      <div class="result">
+        Result: {{ result }}
+      </div>
+    </div>
+  </div>
