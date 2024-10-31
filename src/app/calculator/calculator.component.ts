@@ -10,9 +10,10 @@ import { FormsModule } from '@angular/forms';
 })
 export class CalculatorComponent {
   // Properties for the browser calculator
-  num1: number = 0;
-  num2: number = 0;
-  result: number = 0;
+  // ! tells typescript that i will assign a value to the variable later
+  num1!: number ;
+  num2!: number;
+  result!: number;
 
   // Method 1: Calculate age from birth year
   calculateAge(birthYear: number): number {
