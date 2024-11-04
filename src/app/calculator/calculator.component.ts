@@ -9,6 +9,8 @@ import { FormsModule } from '@angular/forms';
   styleUrl: './calculator.component.css'
 })
 export class CalculatorComponent {
+  
+  
   // Properties for the browser calculator
   // ! tells typescript that i will assign a value to the variable later
   num1!: number ;
@@ -37,8 +39,24 @@ export class CalculatorComponent {
   }
 
 
-  // Method 5: Add numbers from browser input
-  addNumbers(): void {
+   // Calculator methods
+   addNumbers(): void {
     this.result = this.num1 + this.num2;
+  }
+
+  subtractNumbers(): void {
+    this.result = this.num1 - this.num2;
+  }
+
+  multiplyNumbers(): void {
+    this.result = this.num1 * this.num2;
+  }
+
+  divideNumbers(): void {
+    if (this.num2 === 0) {
+      alert('Cannot divide by zero!');
+      return;
+    }
+    this.result = this.num1 / this.num2;
   }
 }

@@ -40,3 +40,21 @@
     font-size: 1.2em;
     font-weight: bold;
   }
+
+
+
+
+
+
+  
+.button-group {
+  display: flex;
+  gap: 10px;
+  margin: 10px 0;
+  flex-wrap: wrap;
+}
+
+.button-group button {
+  flex: 1;
+  min-width: 120px;
+}
