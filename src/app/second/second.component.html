@@ -1,0 +1,26 @@
+<div class="simple-card">
+  <h2>Simple Info Card</h2>
+  <button (click)="toggleInfo()">
+    {{ isInfoVisible ? "Hide Info" : "Show Info" }}
+  </button>
+
+  @if (isInfoVisible) {
+  <div class="info-content">
+    <p>This is some basic information that can be toggled.</p>
+    <ul>
+      <li>Item 1</li>
+      <li>Item 2</li>
+      <li>Item 3</li>
+    </ul>
+  </div>
+  }
+
+@for (item of ArrayTrials; track $index) {
+  <h3> {{ $index +1 }}. {{item}}</h3>
+}
+@for(product of AnArrayOfProducts; track $index){
+    <p>{{$index +1}}. {{product.name}}</p>
+}
+</div>
+
+

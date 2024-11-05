@@ -1,0 +1,19 @@
+.simple-card {
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin: 20px;
+    width: 300px;
+  }
+  
+  button {
+    padding: 5px 10px;
+    margin: 10px 0;
+  }
+  
+  .info-content {
+    margin-top: 10px;
+  }
+  
+  ul {
+    margin-left: 20px;
+  }

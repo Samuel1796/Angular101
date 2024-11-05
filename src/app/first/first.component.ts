@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input, input, signal } from '@angular/core';
 
 @Component({
   selector: 'app-first',
@@ -8,6 +8,14 @@ import { Component } from '@angular/core';
   styleUrl: './first.component.css',
 })
 export class FirstComponent {
+    // @Input serves as a signal that the variable is ready to accept values to this component -- a listener
+    @Input() IamAnInputToThisComponent: string = 'Hahaha ';
+    @Input() About: string = ' ';
+    @Input() Work: string = ' ';
+
+    
+
+
   myName: string = 'Josh';
   isJoshABoy: boolean = true;
 
