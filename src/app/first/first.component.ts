@@ -1,4 +1,12 @@
 import { Component, Input, input, signal } from '@angular/core';
+type productFormat = {
+  name: string;
+  price: number;
+  quantity: number;
+  description: string;
+  image: string;
+};
+
 
 @Component({
   selector: 'app-first',
@@ -9,9 +17,8 @@ import { Component, Input, input, signal } from '@angular/core';
 })
 export class FirstComponent {
     // @Input serves as a signal that the variable is ready to accept values to this component -- a listener
-    @Input() IamAnInputToThisComponent: string = 'Hahaha ';
-    @Input() About: string = ' ';
-    @Input() Work: string = ' ';
+    @Input() products!: productFormat;
+    
 
     
 
@@ -49,4 +56,5 @@ export class FirstComponent {
 // Five methods that will receive inputs and should do anything you want
 //  for the last method (add two numbers but should be added on the browser. take inputs from browser and display the value too on the browser)
 
-// 
+// assignment
+/// Design the card on figma and replicate it usimg figma

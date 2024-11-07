@@ -1,14 +1,40 @@
-<body>
+<!-- <body>
 <div
  class="main">
   <div class="sub">
-    <h1>Hello my name is {{IamAnInputToThisComponent}}</h1>
+    <h1>Hello my name is </h1>
   </div>
   <div class="sub">
-    <p>{{About}}</p>
+    <p></p>
   </div>
   <div class="sub">
-    <p>{{Work}}</p>
+    <p></p>
   </div>
-</div>
-</body>
+  <div class="sub"></div>
+    <p>{{products.description}}</p>
+  </div>
+
+
+
+</body> -->
+
+<head>
+  <style>
+   
+  </style>
+  </head>
+  <body>
+    <div class="card">
+      <div class="image-container">
+        <img src={{products.image}} alt="Samsung Galaxy S24">
+      </div>
+      <div class="content">
+        <h2 class="product-name">{{products.name}}</h2>
+        <p class="price">${{products.price}}</p>
+        <p class="quantity">{{products.quantity}} available</p>
+        <p class="description">{{products.description}}</p>
+        <button class="button">Add to Cart</button>
+      </div>
+    </div>
+  </body>
+  
