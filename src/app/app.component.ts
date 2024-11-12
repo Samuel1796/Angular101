@@ -1,17 +1,65 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { FirstComponent } from "./first/first.component";
+import { FirstComponent } from './first/first.component';
 import { CalculatorComponent } from './calculator/calculator.component';
-import { SecondComponent } from "./second/second.component";
-import { MainComponent } from "./main/main.component";
+import { SecondComponent } from './second/second.component';
+import { MainComponent } from './main/main.component';
+import { Movie, Product, User } from './utils/types.type';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, FirstComponent, CalculatorComponent, SecondComponent, MainComponent],
+  imports: [
+    RouterOutlet,
+    FirstComponent,
+    CalculatorComponent,
+    SecondComponent,
+    MainComponent,
+  ],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrl: './app.component.css',
 })
 export class AppComponent {
   title = 'Angular101';
+
+  num1: number = 80;
+  string1: string = 'Kofi';
+  testbool: boolean = true;
+  testArray: (string | number)[] = ['aa', 'bb', 'cc', 7, 6, 8];
+  testArray2: any = ['kofi', 8, true, [true, 8, 'Yes']];
+
+  Samuel:User = {
+    nameOfSong: 'As it was',
+    artist: 'Harry Styles',
+    rating: 5,
+  }
+
+  Sam:Movie ={
+    title: "The Originals",
+    genre: "Action",
+    origin: "USA"
+  }
+
+arrayOfProducts: Product[] = [
+  {
+    name: "Wireless Headphones",
+    price: 199.99,
+    description: "High-quality noise cancelling bluetooth headphones",
+    category: "Electronics",
+    image: "..."
+},
+{
+    name: "Exercise Mat",
+    price: 29.99,
+    description: "Premium non-slip exercise mat",
+    category: "Fitness",
+    image: "....."
+},
+]
+
+
+car(name: string, price: number):string {
+  return "";
+}
+  
 }
