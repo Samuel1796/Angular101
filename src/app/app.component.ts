@@ -20,6 +20,15 @@ import { Movie, Product, User } from './utils/types.type';
   styleUrl: './app.component.css',
 })
 export class AppComponent {
+
+  // This hook runs when a component is initialised
+  // Second to constructor
+  ngOnInit(){ }
+
+  // this hook runs after everything in the component is rendered
+  ngAfterViewInit(){}
+
+
   title = 'Angular101';
 
   num1: number = 80;
@@ -29,8 +38,8 @@ export class AppComponent {
   testArray2: any = ['kofi', 8, true, [true, 8, 'Yes']];
 
   Samuel:User = {
-    nameOfSong: 'As it was',
-    artist: 'Harry Styles',
+    nameOfSong: 'Heat Waves',
+    artist: 'Glass Animals',
     rating: 5,
   }
 
@@ -62,4 +71,21 @@ car(name: string, price: number):string {
   return "";
 }
   
+a: number = 10;
+b: number = 20;
+sum !: number;
+
+sample_function():void{
+  this.sum = this.a + this.b;
+}
+
+
+// constructor() {
+//   this.sample_function();
+// }
+
+// Life Cycle Hooks
+// On initiation - 
+// Destroyed - 
+// After Something changes - 
 }
