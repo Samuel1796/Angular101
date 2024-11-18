@@ -23,11 +23,12 @@ export class AppComponent {
 
   // This hook runs when a component is initialised
   // Second to constructor
-  ngOnInit(){ }
+  ngOnInit(){
+    this.display_name("Net", "Ninja");
+   }
 
   // this hook runs after everything in the component is rendered
   ngAfterViewInit(){}
-
 
   title = 'Angular101';
 
@@ -75,17 +76,16 @@ a: number = 10;
 b: number = 20;
 sum !: number;
 
-sample_function():void{
-  this.sum = this.a + this.b;
-}
-
-
-// constructor() {
-//   this.sample_function();
+// sample_function():void{
+//   this.sum = this.a + this.b;
 // }
 
-// Life Cycle Hooks
-// On initiation - 
-// Destroyed - 
-// After Something changes - 
+add_two_numbers(num1: string, num2: string){
+
+  this.sum = Number(num1) + Number(num2);
+}
+
+display_name(first_name: string, second_name: string,) {
+  console.log(first_name + " " + second_name);
+}
 }
