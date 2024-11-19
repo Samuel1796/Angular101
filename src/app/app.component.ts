@@ -5,6 +5,7 @@ import { CalculatorComponent } from './calculator/calculator.component';
 import { SecondComponent } from './second/second.component';
 import { MainComponent } from './main/main.component';
 import { Movie, Product, User } from './utils/types.type';
+import { FormsComponent } from "./forms/forms.component";
 
 @Component({
   selector: 'app-root',
@@ -15,7 +16,8 @@ import { Movie, Product, User } from './utils/types.type';
     CalculatorComponent,
     SecondComponent,
     MainComponent,
-  ],
+    FormsComponent
+],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
 })
