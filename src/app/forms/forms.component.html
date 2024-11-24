@@ -12,6 +12,6 @@
         <input type="email" name="email" [(ngModel)]="user.email">
     </div>
     <div class="form-group">
-        <button type="submit" [disabled]="form.form.touched">Register</button>
+        <button type="submit" [disabled]="form.form.pristine">Register</button>
     </div>
 </form>
