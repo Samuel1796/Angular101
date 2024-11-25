@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { CalcComponent } from './calc/calc.component';
+import { FormsComponent } from "./forms/forms.component";
+import { ReactiveFormsComponent } from "./reactive-forms/reactive-forms.component";
 
 
 @Component({
@@ -8,8 +10,9 @@ import { CalcComponent } from './calc/calc.component';
   standalone: true,
   imports: [
     RouterOutlet,
-    CalcComponent
-   
+    CalcComponent,
+    FormsComponent,
+    ReactiveFormsComponent
 ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',

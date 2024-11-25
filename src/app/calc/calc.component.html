@@ -1,32 +1,38 @@
-<div class="main-calc-body">
-  <div class="display">
-    <div class="expression">{{expression || '0'}}</div>
-    <div class="answer">{{answer || '0'}}</div>
-  </div>
-  
-  <div class="calculator-grid">
-    <button class="clear" (click)="on_clear_button_click()">AC</button>
-    <button class="operator" (click)="on_operator_button_click('/')">/</button>
-    <button class="operator" (click)="on_operator_button_click('*')">×</button>
-    <button class="operator" (click)="on_operator_button_click('-')">−</button>
-    
-    <button class="number" (click)="on_number_button_click(7)">7</button>
-    <button class="number" (click)="on_number_button_click(8)">8</button>
-    <button class="number" (click)="on_number_button_click(9)">9</button>
-    <button class="plus" (click)="on_operator_button_click('+')">+</button>
-    
-    <button class="number" (click)="on_number_button_click(4)">4</button>
-    <button class="number" (click)="on_number_button_click(5)">5</button>
-    <button class="number" (click)="on_number_button_click(6)">6</button>
-    
-    <button class="number" (click)="on_number_button_click(1)">1</button>
-    <button class="number" (click)="on_number_button_click(2)">2</button>
-    <button class="number" (click)="on_number_button_click(3)">3</button>
-    <button class="equals" (click)="on_equal_button_click()">=</button>
+<body>
+  <div class="main-calc-body">
+    <div class="display">
+      <div class="expression">{{ expression || "0" }}</div>
+      <div class="answer">{{ answer || "0" }}</div>
+    </div>
 
-    <button class="number zero" (click)="on_number_button_click(0)">0</button>
-    <button class="number" (click)="on_number_button_click('.')">.</button>
-    
+    <div class="calculator-grid">
+      <button class="clear" (click)="on_clear_button_click()">AC</button>
+      <button class="operator" (click)="on_operator_button_click('/')">
+        /
+      </button>
+      <button class="operator" (click)="on_operator_button_click('*')">
+        ×
+      </button>
+      <button class="operator" (click)="on_operator_button_click('-')">
+        −
+      </button>
 
+      <button class="number" (click)="on_number_button_click(7)">7</button>
+      <button class="number" (click)="on_number_button_click(8)">8</button>
+      <button class="number" (click)="on_number_button_click(9)">9</button>
+      <button class="plus" (click)="on_operator_button_click('+')">+</button>
+
+      <button class="number" (click)="on_number_button_click(4)">4</button>
+      <button class="number" (click)="on_number_button_click(5)">5</button>
+      <button class="number" (click)="on_number_button_click(6)">6</button>
+
+      <button class="number" (click)="on_number_button_click(1)">1</button>
+      <button class="number" (click)="on_number_button_click(2)">2</button>
+      <button class="number" (click)="on_number_button_click(3)">3</button>
+      <button class="equals" (click)="on_equal_button_click()">=</button>
+
+      <button class="number zero" (click)="on_number_button_click(0)">0</button>
+      <button class="number" (click)="on_number_button_click('.')">.</button>
+    </div>
   </div>
-</div>
+</body>

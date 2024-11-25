@@ -1,0 +1,41 @@
+<div class="form-container">
+  <form [formGroup]="registration_form" (ngSubmit)="onSubmit()">
+    <div class="form-field">
+      <label>First Name</label>
+      <input type="text" formControlName="first_name" />
+      @if ( registration_form.controls['first_name'].touched ) {
+      <p>This field has been touched</p>
+
+      }
+    </div>
+
+    <div class="form-field">
+      <label>Last Name</label>
+      <input [ngClass]="" type="text" formControlName="last_name" />
+    </div>
+
+    <div class="form-field">
+      <label>Email</label>
+      <input [ngClass]="{red: registration_form.controls['email'].untouched}" type="email" formControlName="email"  />
+    </div>
+
+    <div class="form-field">
+      <label>Password</label>
+      <input type="password" formControlName="password" />
+    </div>
+
+    <div class="form-field">
+      <label>Confirm Password</label>
+      <input type="password" formControlName="confirm_password" />
+    </div>
+
+    <div class="form-field">
+      <label>
+        <input type="checkbox" formControlName="accept_terms" />
+        I accept the terms and conditions
+      </label>
+    </div>
+
+    <button type="submit">Register</button>
+  </form>
+</div>
